@@ -10,23 +10,24 @@
 </head>
 
 <body>
-    <nav>
+ <div class="wrapper">
+       <nav>
         <div class="logo">
             <img src="./img/logo.svg" alt="Logo">
-            <span><i class="fa-solid fa-bars"></i></span>
-            <span class="senior">Senior Management Dashboard</span>
+            <span class="custom-none"><i class="fa-solid fa-bars"></i></span>
+            <span class="senior custom-none">Senior Management Dashboard</span>
         </div>
         <div class="icons">
-            <div class="custom-img">
+            <div class="custom-img custom-none">
                 <i class="fa-regular fa-calendar-days"></i>
             </div>
-            <div class="custom-img">
+            <div class="custom-img custom-none">
                 <i class="fa-regular fa-comments"></i>
             </div>
             <div class="custom-img">
                 <i class="fa-regular fa-bell"></i>
             </div>
-            <div class="language custom-img">
+            <div class="language custom-img ">
                 <img src="./img/flag.png" alt="UK Flag">
                 <span>Eng</span>
                 <span><i class="fa-solid fa-angle-down"></i></span>
@@ -34,11 +35,11 @@
         </div>
         <div class="profile">
             <img src="./img/profile-img.svg" alt="Profile">
-            <span>Karim Karawia</span>
+            <span class="custom-none">Karim Karawia</span>
             <span><i class="fa-solid fa-angle-down"></i></span>
         </div>
     </nav>
-     <div class="header-container">
+    <div class="header-container">
         <div class="back-button">
             <i class="fa-solid fa-arrow-left"></i>
             <span>Back</span>
@@ -50,182 +51,233 @@
         </div>
     </div>
 
-    <table>
-        <thead class="custom-b">
-            <tr>
-                <th class="custom-th">Post</th>
-                <th>Shift Name</th>
-                <th>Start</th>
-                <th>End</th>
-                <th>Job Designation</th>
-                <th>Wed 23-APR-2025</th>
-                <th>Thu 24-APR-2025</th>
-                <th>FRI 25-APR-2025</th>
-                <th>SAT 26-APR-2025</th>
-                <th class="custom-h">SUN 27-APR-2025</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="location-row">
-                <td colspan="10">
-                    <div class="location-wrapper">
-                        <div>
-                            <span class="location-icon"><i class="fa-solid fa-location-dot"></i></span>
-                            <strong>Location:</strong> Beach Center South Bay Beach Center South Bay
+    <div class="custom-header">
+        <div class="filter-bar">
+            <div class="filter-group">
+                <label>Date</label>
+                <select>
+                    <option>Current Week</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Office</label>
+                <select>
+                    <option>Los Angeles, CA</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Location</label>
+                <select>
+                    <option>Beach Center - South Bay</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Post</label>
+                <select>
+                    <option>ALL</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Search By</label>
+                <select>
+                    <option>Emp Name</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>&nbsp;</label>
+                <input type="text" placeholder="" />
+            </div>
+
+            <div class="filter-buttons">
+                <button class="find-btn">Find</button>
+                <button class="reset-btn">Reset</button>
+            </div>
+        </div>
+      <div class="table-wrapper">
+          <table>
+            <thead class="custom-b">
+                <tr>
+                    <th class="custom-th">Post</th>
+                    <th>Shift Name</th>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Job Designation</th>
+                    <th>Wed 23-APR-2025</th>
+                    <th>Thu 24-APR-2025</th>
+                    <th>FRI 25-APR-2025</th>
+                    <th>SAT 26-APR-2025</th>
+                    <th class="custom-h">SUN 27-APR-2025</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="location-row">
+                    <td colspan="10">
+                        <div class="location-wrapper">
+                            <div>
+                                <span class="location-icon"><i class="fa-solid fa-location-dot"></i></span>
+                                <strong>Location:</strong> Beach Center South Bay Beach Center South Bay
+                            </div>
+                            <div class="legend">
+                                <span class="assigned">Assigned</span>
+                                <span class="vacant">Vacant</span>
+                                <span class="temp">Temp</span>
+                                <span class="completed">Completed</span>
+                                <span class="error">Check In/Out Error</span>
+                            </div>
                         </div>
-                        <div class="legend">
-                            <span class="assigned">Assigned</span>
-                            <span class="vacant">Vacant</span>
-                            <span class="temp">Temp</span>
-                            <span class="completed">Completed</span>
-                            <span class="error">Check In/Out Error</span>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td class="text-left">Beach Center South Bay 11643</td>
-                <td class="custom-w">Split Weekday Shift</td>
-                <td class="custom-size">09:00</td>
-                <td class="custom-size">15:00</td>
-                <td class="custom-w">Un-Armed Guard</td>
-                <td class="errol">Errol Wilford Milligan</td>
-                <td class="no-shift">No Shift</td>
-                <td class="errol">Errol Wilford Milligan</td>
-                <td class="deandre-1">Deandre Demetrius Grissom</td>
-                <td class="vacant"></td>
-            </tr>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-left">Beach Center South Bay 11643</td>
+                    <td class="custom-w">Split Weekday Shift</td>
+                    <td class="custom-size">09:00</td>
+                    <td class="custom-size">15:00</td>
+                    <td class="custom-w">Un-Armed Guard</td>
+                    <td class="errol">Errol Wilford Milligan</td>
+                    <td class="no-shift">No Shift</td>
+                    <td class="errol">Errol Wilford Milligan</td>
+                    <td class="deandre-1">Deandre Demetrius Grissom</td>
+                    <td class="vacant"></td>
+                </tr>
 
-            <tr>
-                <td class="text-left">Beach Center South Bay 11643</td>
-                <td class="custom-w">Split Weekday Shift</td>
-                <td class="custom-size">09:00</td>
-                <td class="custom-size">15:00</td>
-                <td class="custom-w">Un-Armed Guard</td>
-                <td class="errol">Errol Wilford Milligan</td>
-                <td class="vacant">Vacant</td>
-                <td class="errol">Errol Wilford Milligan</td>
-                <td class="elijah">Elijah Chatman</td>
-                <td class="joshua">Joshua Anthony Perez</td>
+                <tr>
+                    <td class="text-left">Beach Center South Bay 11643</td>
+                    <td class="custom-w">Split Weekday Shift</td>
+                    <td class="custom-size">09:00</td>
+                    <td class="custom-size">15:00</td>
+                    <td class="custom-w">Un-Armed Guard</td>
+                    <td class="errol">Errol Wilford Milligan</td>
+                    <td class="vacant">Vacant</td>
+                    <td class="errol">Errol Wilford Milligan</td>
+                    <td class="elijah">Elijah Chatman</td>
+                    <td class="joshua">Joshua Anthony Perez</td>
 
-            </tr>
+                </tr>
 
-            <tr>
-                <td class="text-left">Beach Center South Bay 11643</td>
-                <td>Adhoc-Day Shift 1</td>
-                <td class="custom-size">15:00</td>
-                <td class="custom-size">21:00</td>
-                <td class="custom-w">Un-Armed Guard</td>
-                <td class="vacant">Vacant</td>
-                <td class="no-shift">No Shift</td>
-                <td class="no-shift">No Shift</td>
-                <td class="errol">Joshua Anthony Perez</td>
-                <td class="vacant">Vacant</td>
-            </tr>
-            <tr>
-                <td class="text-left">Beach Center South Bay 11643</td>
-                <td class="custom-w">Adhac-Swing Shift 1</td>
-                <td class="custom-size">09:00</td>
-                <td class="custom-size">15:00</td>
-                <td class="custom-w">Un-Armed Guard</td>
-                <td class="no-shift">No Shift</td>
-                <td class="deandre-1">Deandre Demetrius Grissom</td>
-                <td class="no-shift">No Shift</td>
-                <td class="errol">Elijah Chatman</td>
-                <td class="no-shift">No Shift</td>
-            </tr>
+                <tr>
+                    <td class="text-left">Beach Center South Bay 11643</td>
+                    <td>Adhoc-Day Shift 1</td>
+                    <td class="custom-size">15:00</td>
+                    <td class="custom-size">21:00</td>
+                    <td class="custom-w">Un-Armed Guard</td>
+                    <td class="vacant">Vacant</td>
+                    <td class="no-shift">No Shift</td>
+                    <td class="no-shift">No Shift</td>
+                    <td class="errol">Joshua Anthony Perez</td>
+                    <td class="vacant">Vacant</td>
+                </tr>
+                <tr>
+                    <td class="text-left">Beach Center South Bay 11643</td>
+                    <td class="custom-w">Adhac-Swing Shift 1</td>
+                    <td class="custom-size">09:00</td>
+                    <td class="custom-size">15:00</td>
+                    <td class="custom-w">Un-Armed Guard</td>
+                    <td class="no-shift">No Shift</td>
+                    <td class="deandre-1">Deandre Demetrius Grissom</td>
+                    <td class="no-shift">No Shift</td>
+                    <td class="errol">Elijah Chatman</td>
+                    <td class="no-shift">No Shift</td>
+                </tr>
 
-            <tr>
-                <td class="text-left">Beach Center South Bay 11643</td>
-                <td class="custom-w">Adhoc-Day Shift 1</td>
-                <td class="custom-size">15:00</td>
-                <td class="custom-size">21:00</td>
-                <td class="custom-w">Un-Armed Guard</td>
-                <td class="no-shift">No Shift</td>
-                <td class="no-shift">No Shift</td>
-                <td class="vacant">Vacant</td>
-                <td class="elijah">Deandre Demetrius Grissom</td>
-                <td class="vacant">Vacant</td>
-            </tr>
+                <tr>
+                    <td class="text-left">Beach Center South Bay 11643</td>
+                    <td class="custom-w">Adhoc-Day Shift 1</td>
+                    <td class="custom-size">15:00</td>
+                    <td class="custom-size">21:00</td>
+                    <td class="custom-w">Un-Armed Guard</td>
+                    <td class="no-shift">No Shift</td>
+                    <td class="no-shift">No Shift</td>
+                    <td class="vacant">Vacant</td>
+                    <td class="elijah">Deandre Demetrius Grissom</td>
+                    <td class="vacant">Vacant</td>
+                </tr>
 
-            <tr>
-                <td class="text-left">Beach Center South Bay 11643</td>
-                <td>Adhoc-Swing Shift 1</td>
-                <td class="custom-size">17:15</td>
-                <td class="custom-size">23:45</td>
-                <td class="custom-w">Un-Armed Guard</td>
-                <td class="vacant">Vacant</td>
-                <td class="errol">Errol Wilford Milligan</td>
-                <td class="deandre">Errol Wilford Milligan</td>
-                <td class="joshua">Joshua Anthony Perez</td>
-                <td class="vacant">Vacant</td>
-            </tr>
-            <tr>
-                <td class="text-left">Beach Center South Bay 11643</td>
-                <td class="custom-w">Split Weekday Shift</td>
-                <td class="custom-size">09:00</td>
-                <td class="custom-size">15:00</td>
-                <td class="custom-w">Un-Armed Guard</td>
-                <td class="errol">Deandre Demetrius Grissom</td>
-                <td class="no-shift">No Shift</td>
-                <td class="errol">Deandre Demetrius Grissom</td>
-                <td class="deandre">Elijah Chatman</td>
-                <td class="joshua">Joshua Anthony Perez</td>
-            </tr>
+                <tr>
+                    <td class="text-left">Beach Center South Bay 11643</td>
+                    <td>Adhoc-Swing Shift 1</td>
+                    <td class="custom-size">17:15</td>
+                    <td class="custom-size">23:45</td>
+                    <td class="custom-w">Un-Armed Guard</td>
+                    <td class="vacant">Vacant</td>
+                    <td class="errol">Errol Wilford Milligan</td>
+                    <td class="deandre">Errol Wilford Milligan</td>
+                    <td class="joshua">Joshua Anthony Perez</td>
+                    <td class="vacant">Vacant</td>
+                </tr>
+                <tr>
+                    <td class="text-left">Beach Center South Bay 11643</td>
+                    <td class="custom-w">Split Weekday Shift</td>
+                    <td class="custom-size">09:00</td>
+                    <td class="custom-size">15:00</td>
+                    <td class="custom-w">Un-Armed Guard</td>
+                    <td class="errol">Deandre Demetrius Grissom</td>
+                    <td class="no-shift">No Shift</td>
+                    <td class="errol">Deandre Demetrius Grissom</td>
+                    <td class="deandre">Elijah Chatman</td>
+                    <td class="joshua">Joshua Anthony Perez</td>
+                </tr>
 
-            <tr>
-                <td class="text-left">Beach Center South Bay 11643</td>
-                <td class="custom-w">Adhoc-Day Shift 1</td>
-                <td class="custom-size">15:00</td>
-                <td class="custom-size">21:00</td>
-                <td class="custom-w">Un-Armed Guard</td>
-                <td class="joshua">Elijah Chatman</td>
-                <td class="vacant">Vacant</td>
-                <td class="elijah">Errol Wilford Milligan</td>
-                <td class="errol">Joshua Anthony Perez</td>
-                <td class="vacant">Vacant</td>
-            </tr>
+                <tr>
+                    <td class="text-left">Beach Center South Bay 11643</td>
+                    <td class="custom-w">Adhoc-Day Shift 1</td>
+                    <td class="custom-size">15:00</td>
+                    <td class="custom-size">21:00</td>
+                    <td class="custom-w">Un-Armed Guard</td>
+                    <td class="joshua">Elijah Chatman</td>
+                    <td class="vacant">Vacant</td>
+                    <td class="elijah">Errol Wilford Milligan</td>
+                    <td class="errol">Joshua Anthony Perez</td>
+                    <td class="vacant">Vacant</td>
+                </tr>
 
-            <tr>
-                <td class="text-left">Beach Center South Bay 11643</td>
-                <td>Adhoc-Swing Shift 1</td>
-                <td class="custom-size">09:00</td>
-                <td class="custom-size">15:00</td>
-                <td class="custom-w">Un-Armed Guard</td>
-                <td class="vacant">Vacant</td>
-                <td class="elijah">Elijah Chatman</td>
-                <td class="no-shift">No Shift</td>
-                <td class="vacant">Vacant</td>
-                <td class="no-shift">No Shift</td>
-            </tr>
-            <tr>
-                <td class="text-left">Beach Center South Bay 11643</td>
-                <td class="custom-w">Adhoc Day Shift 1</td>
-                <td class="custom-size">15:00</td>
-                <td class="custom-size">21:00</td>
-                <td class="custom-w">Un-Armed Guard</td>
-                <td class="no-shift">No Shift</td>
-                <td class="no-shift">No Shift</td>
-                <td class="no-shift">No Shift</td>
-                <td class="vacant">Vacant</td>
-                <td class="no-shift">No Shift</td>
-            </tr>
+                <tr>
+                    <td class="text-left">Beach Center South Bay 11643</td>
+                    <td>Adhoc-Swing Shift 1</td>
+                    <td class="custom-size">09:00</td>
+                    <td class="custom-size">15:00</td>
+                    <td class="custom-w">Un-Armed Guard</td>
+                    <td class="vacant">Vacant</td>
+                    <td class="elijah">Elijah Chatman</td>
+                    <td class="no-shift">No Shift</td>
+                    <td class="vacant">Vacant</td>
+                    <td class="no-shift">No Shift</td>
+                </tr>
+                <tr>
+                    <td class="text-left">Beach Center South Bay 11643</td>
+                    <td class="custom-w">Adhoc Day Shift 1</td>
+                    <td class="custom-size">15:00</td>
+                    <td class="custom-size">21:00</td>
+                    <td class="custom-w">Un-Armed Guard</td>
+                    <td class="no-shift">No Shift</td>
+                    <td class="no-shift">No Shift</td>
+                    <td class="no-shift">No Shift</td>
+                    <td class="vacant">Vacant</td>
+                    <td class="no-shift">No Shift</td>
+                </tr>
 
-            <tr>
-                <td class="text-left">Beach Center South Bay 11643</td>
-                <td class="custom-w">Split Weekday Shift</td>
-                <td class="custom-size">17:15</td>
-                <td class="custom-size">23:45</td>
-                <td class="custom-w">Un-Armed Guard</td>
-                <td class="vacant">Vacant</td>
-                <td class="deandre">Errol Wilford Milligan</td>
-                <td class="errol">Errol Wilford Milligan</td>
-                <td class="no-shift">No Shift</td>
-                <td class="deandre">Joshua Anthony Perez</td>
-            </tr>
-        </tbody>
+                <tr>
+                    <td class="text-left">Beach Center South Bay 11643</td>
+                    <td class="custom-w">Split Weekday Shift</td>
+                    <td class="custom-size">17:15</td>
+                    <td class="custom-size">23:45</td>
+                    <td class="custom-w">Un-Armed Guard</td>
+                    <td class="vacant">Vacant</td>
+                    <td class="deandre">Errol Wilford Milligan</td>
+                    <td class="errol">Errol Wilford Milligan</td>
+                    <td class="no-shift">No Shift</td>
+                    <td class="deandre">Joshua Anthony Perez</td>
+                </tr>
+            </tbody>
 
-    </table>
+        </table>
+      </div>
+    </div>
+ </div>
 </body>
 
 </html>
