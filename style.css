@@ -318,6 +318,13 @@ td {
     font-size: 14px;
 }
 
+.custom-position{
+position: sticky;
+    left: 0; 
+    background: white; 
+     z-index: 2;
+}
+
 .custom-w {
     width: 131px;
     font-size: 14px;
